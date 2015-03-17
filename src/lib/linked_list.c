@@ -54,4 +54,5 @@ void Llist_remove(Llist *l, Llist_node *node) {
 	nnext -> prev = pprev;	
 
 	l -> size -= 1;
+	free(node);
 }
